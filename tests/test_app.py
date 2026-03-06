@@ -33,7 +33,7 @@ def test_victory_scenario(driver):
     driver.find_element(AppiumBy.ID, "com.example.miniwordle:id/btnCheck").click()
     
     result = driver.find_element(AppiumBy.ID, "com.example.miniwordle:id/tvResult")
-    assert result.text == "VICTORY!"
+    assert result.text == "VICTORY! 🎉"
     
     # Sprawdzenie przycisków po wygranej (Checking buttons state)
     reset_btn = driver.find_element(AppiumBy.ID, "com.example.miniwordle:id/btnReset")
